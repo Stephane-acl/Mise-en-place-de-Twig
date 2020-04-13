@@ -1,0 +1,12 @@
+{
+    "name": "wilder/twig",
+    "authors": [
+        {
+            "name": "Stephane-acl",
+            "email": "stephaneacl@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}

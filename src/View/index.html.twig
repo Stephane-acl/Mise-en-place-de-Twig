@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Products {% endblock %}
+
+
+
+{% block content %}
+
+    {% set sorted = products | sort %}
+
+    <div class="row">
+    {% for product in sorted %}
+
+    <div class="card text-center col-4" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">This is your {{ product }}</h5>
+            <p class="card-text">To buy your product, please click on the button below</p>
+            <a href="#" class="btn btn-primary">Buy !</a>
+        </div>
+    </div>
+
+    {% endfor %}
+    </div>
+
+
+{% endblock %}
+
+
+
+
+
